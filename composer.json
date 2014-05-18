@@ -1,0 +1,27 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/winmillwill/drupal-parse-composer"
+        },
+        {
+            "type": "composer",
+            "url": "http://dp.prometdev.com"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "vendor/drupal/modules/{$name}": ["type:drupal-module"]
+        }
+    },
+    "require": {
+        "composer/satis": "*@dev",
+        "composer/composer": "*@dev",
+        "drupal/parse-composer": "*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\Composer\\": ""
+        }
+    }
+}
