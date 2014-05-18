@@ -5,15 +5,18 @@
             "url": "https://github.com/winmillwill/drupal-parse-composer"
         },
         {
-            "type": "composer",
-            "url": "http://dp.prometdev.com"
+            "type": "package",
+            "package": {
+                "name": "drupal/drupal",
+                "version": "7.28.0",
+                "dist":
+                {
+                    "url": "http://ftp.drupal.org/files/projects/drupal-7.28.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
-    "extra": {
-        "installer-paths": {
-            "vendor/drupal/modules/{$name}": ["type:drupal-module"]
-        }
-    },
     "require": {
         "composer/satis": "*@dev",
         "composer/composer": "*@dev",
