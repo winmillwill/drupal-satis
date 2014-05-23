@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "80474f742e11f49a6a29822371c36756",
+    "hash": "88efb596677fdf26ac11fbbb19784387",
     "packages": [
         {
             "name": "composer/composer",
@@ -145,7 +145,7 @@
         },
         {
             "name": "drupal/parse-composer",
-            "version": "dev-master",
+            "version": "v0.2.0-beta",
             "source": {
                 "type": "git",
                 "url": "/Users/will/projects/drupal-parse-composer",
@@ -659,7 +659,7 @@
     "stability-flags": {
         "composer/satis": 20,
         "composer/composer": 20,
-        "drupal/parse-composer": 20
+        "drupal/parse-composer": 10
     },
     "platform": [],
     "platform-dev": []

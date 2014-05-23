@@ -21,7 +21,7 @@
     "require": {
         "composer/satis": "*@dev",
         "composer/composer": "*@dev",
-        "drupal/parse-composer": "*@dev"
+        "drupal/parse-composer": "*@beta"
     },
     "autoload": {
         "psr-4": {
