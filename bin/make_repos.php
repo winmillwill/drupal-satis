@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-$json = json_decode(file_get_contents('satis.json'), true);
+$json = json_decode(@file_get_contents('satis.json') ?: '{"repositories": []}', true);
 foreach ($json['repositories'] as $repository) {
   $repositories[$repository['url']] = $repository;
 }

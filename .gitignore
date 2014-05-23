@@ -1,1 +1,5 @@
 vendor
+include
+index.html
+satis.json
+packages.json

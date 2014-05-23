@@ -1,8 +1,9 @@
 {
+    "name": "drupal/satis",
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/winmillwill/drupal-parse-composer"
+            "url": "/Users/will/projects/drupal-parse-composer"
         },
         {
             "type": "package",
