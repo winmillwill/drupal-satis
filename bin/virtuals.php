@@ -8,14 +8,16 @@ foreach ($packages as $name => $versions) {
   foreach ($versions as $version => $package) {
     if (isset($package['replace'])) {
       foreach ($package['replace'] as $virtualName => $virtualVersion) {
-        $virtuals[$virtualName][$version] = [
-          'name' => $virtualName,
-          'type' => 'metapackage',
-          'version' => $version,
-          'require' => [
-            $name => $version
-          ]
-        ];
+        if (!array_key_exists($virtualName, $packages)) {
+          $virtuals[$virtualName][$version] = [
+            'name' => $virtualName,
+            'type' => 'metapackage',
+            'version' => $version,
+            'require' => [
+              $name => $version
+            ]
+          ];
+        }
       }
     }
   }
